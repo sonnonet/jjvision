@@ -5,7 +5,7 @@
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git 
 cd Adafruit_Python_DHT
 sudo python setup.py install
-cd Adafruit_Python_DHT/examples
+cd examples
 ```
   - run
   ```
@@ -102,7 +102,13 @@ sudo apt install influxdb
 ```
 sudo service influxdb start
 ```
-
+## 5. 데이터베이스 만들기
+```
+>create database <데이터베이스이름>
+```
+```
+확인 : show databases 
+```
 # Grafana Installation
 
 ## 1. Repository의 GPG key를 더하기
