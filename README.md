@@ -1,4 +1,4 @@
-# 전주비전대 Project 
+# 라즈베리파이 Projects
 
 ## Install DHT11 sensor 
 ```
