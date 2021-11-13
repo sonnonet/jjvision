@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys, serial, time
 
@@ -9,13 +9,13 @@ while(True):
         rcvBuf = bytearray()
         device.reset_input_buffer()
         rcvBuf = device.read_until(size=12)
-        print rcvBuf
+        print (rcvBuf)
         temp = rcvBuf.find('p')
         a = rcvBuf[2:temp]
         b = int(a)
-        print b
+        print (b)
     except Exception as e:
-        print("Exception read") + str(e)
+        print("Exception read" + str(e))
 
     time.sleep(5)
 
